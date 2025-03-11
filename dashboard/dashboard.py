@@ -11,10 +11,10 @@ st.title('📊 Dashboard E-Commerce: Produk Terlaris & Metode Pembayaran')
 # ---------- Load Data ----------
 @st.cache_data
 def load_data():
-    order_items = pd.read_csv("../data/order_items_dataset.csv")
-    products = pd.read_csv("../data/products_dataset.csv")
-    product_category_name_translation = pd.read_csv("../data/product_category_name_translation.csv")
-    order_payments = pd.read_csv("../data/order_payments_dataset.csv")
+    order_items = pd.read_csv("data/order_items_dataset.csv")
+    products = pd.read_csv("data/products_dataset.csv")
+    product_category_name_translation = pd.read_csv("data/product_category_name_translation.csv")
+    order_payments = pd.read_csv("data/order_payments_dataset.csv")
     return order_items, products, product_category_name_translation, order_payments
 
 order_items, products, product_category_name_translation, order_payments = load_data()
